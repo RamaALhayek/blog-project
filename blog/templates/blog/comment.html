@@ -1,0 +1,6 @@
+{% if comment %}
+  <p>Your comment was created.</p>
+  <a href="{{ post.get_absolute_url }}">Back to your post</a>
+{% else %}
+  {% include "includes/comment_form.html" %}
+{% endif %}
